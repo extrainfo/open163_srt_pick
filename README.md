@@ -1,4 +1,5 @@
 README
 -----------
-    python open163_srt_pick.py http://v.163.com/movie/2009/4/8/R/M8R66JSS1_M8R8K4J8R.html
-
+    python open163_srt_pick.py http://v.163.com/movie/2011/6/C/L/M83H6CMSE_M84FUMUCL.html
+    or
+    python open163_srt_pick http://v.163.com/special/opencourse/cosmic.html

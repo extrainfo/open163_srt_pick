@@ -26,7 +26,7 @@ def pick_srt(url):
         zh_srt = srt_url[0].string
         en_srt = srt_url[1].string
     except:
-        print "[-] can't pick %s\n%s" % (number, xml_url)
+        print "[-] can't pick %s%s\n%s" % (title, number, xml_url)
         return False
     return number, title, zh_srt, en_srt
 
@@ -82,7 +82,10 @@ def check_url(url):
         return False
 
 def process(urls):
-    number, title, dir_name, zh_srt, en_srt = info(urls[0])
+    if info(urls[0]):
+        number, title, dir_name, zh_srt, en_srt = info(urls[0])
+    else:
+        return False
     if len(urls) == 1:
         print dir_name
         print zh_srt
